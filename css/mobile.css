@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  /* Xóa bỏ đường kẻ trái phải item mục chứng chỉ*/
+  #certificate .items-cer:nth-child(even)::before {
+    content: none;
+  }
+  #certificate .items-cer::after {
+    right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  #certificate .items-cer:nth-child(even)::after {
+    left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  /* PHẦN DỰ ÁN */
+  #project .time-project,
+  .info-project {
+    grid-template-columns: auto;
+    row-gap: 5px;
+  }
+  .time-project .box-color {
+    grid-row: unset;
+  }
+}
